@@ -215,6 +215,8 @@ $string['config_recordingready_enabled'] = 'Send notifications when a recording 
 $string['config_recordingready_enabled_description'] = 'Enable the plugin for sending notifications when the recording is ready. (It will only work if the script post_publish_recording_ready_callback is enabled in the BigBlueButton server)';
 $string['config_meetingevents_enabled'] = 'Register live events';
 $string['config_meetingevents_enabled_description'] = 'Enable the plugin for accepting and processing live events after the session ends. (It must be enabled for "Activity completion" and will only work if the BigBlueButton server is capable of processing post_events scripts)';
+$string['config_transferschedule_enabled'] = 'Transfer BBB schedules to API';
+$string['config_transferschedule_enabled_description'] = 'Sends digest of all planned BBB-Activities including number of enrolled users.';
 
 $string['config_warning_curl_not_installed'] = 'This feature requires the CURL extension for php installed and enabled. The settings will be accessible only if this condition is fulfilled.';
 $string['config_warning_bigbluebuttonbn_cfg_deprecated'] = 'BigBlueButtonBN is making use of config.php with a global variable that has been deprecated. Please convert the file as it will not be supported in future versions';
@@ -562,3 +564,5 @@ $string['index_error_bbtn'] = 'BigBlueButton ID {$a} is incorrect';
 
 $string['view_mobile_message_reload_page_creation_time_meeting'] = 'You exceeded the 45 seconds in this page, please reload the page to join correctly to the meeting.';
 $string['view_mobile_message_groups_not_supported'] = 'This instance is enable to work with groups but the mobile app has not support for this. Please open in desktop if you want to use the group support.';
+
+$string['transfer_schedules'] = 'Transfer scheduled BBB-activities and amount of users';

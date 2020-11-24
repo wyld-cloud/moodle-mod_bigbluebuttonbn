@@ -195,7 +195,8 @@ class validator {
     public static function section_settings_extended_shown() {
         global $CFG;
         return (!isset($CFG->bigbluebuttonbn['recordingready_enabled']) ||
-                !isset($CFG->bigbluebuttonbn['meetingevents_enabled']));
+                !isset($CFG->bigbluebuttonbn['meetingevents_enabled']) ||
+                !isset($CFG->bigbluebuttonbn['transferschedule_enabled']));
     }
 
     /**

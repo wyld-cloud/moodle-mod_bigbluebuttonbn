@@ -747,7 +747,8 @@ class mod_bigbluebuttonbn_lib_testcase extends advanced_testcase {
         $this->resetAfterTest();
         list($bbactivitycontext, $bbactivitycm, $bbactivity) = $this->create_instance();
         $CFG->bigbluebuttonbn_meetingevents_enabled = true;
-
+        $CFG->bigbluebuttonbn_transferschedule_enabled = true;
+        
         $PAGE->set_cm($bbactivitycm);
         $PAGE->set_context(context_module::instance($bbactivitycm->id));
         $PAGE->set_url('/mod/bigbluebuttonbn/view.php', ['id' => $bbactivitycm->id]);
@@ -768,6 +769,7 @@ class mod_bigbluebuttonbn_lib_testcase extends advanced_testcase {
         list($course, $bbactivitycmuser) = get_course_and_cm_from_instance($bbactivity->id, 'bigbluebuttonbn');
 
         $CFG->bigbluebuttonbn_meetingevents_enabled = true;
+        $CFG->bigbluebuttonbn_transferschedule_enabled = true;
 
         $PAGE->set_cm($bbactivitycmuser);
         $PAGE->set_context(context_module::instance($bbactivitycm->id));

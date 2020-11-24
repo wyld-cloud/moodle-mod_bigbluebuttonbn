@@ -523,3 +523,14 @@ $CFG->bigbluebuttonbn['shared_secret'] = '8cd8ef52e8e101574e400365b55e11a6';
  * $CFG->bigbluebuttonbn['general_warning_button_text'] = "Upgrade your site";
  * $CFG->bigbluebuttonbn['general_warning_button_class'] = "btn btn-primary";
  */
+
+ /*
+  * 2.4. CONFIGURATION FOR "TRANSFER SCHEDULE TO API" FEATURE
+  *
+  **/
+ /*
+  * Sends digest of all planned BBB-Activities including number of enrolled users.
+  * Known to be implemented by wyld.cloud
+  * $CFG->bigbluebuttonbn['transferschedule_enabled'] = 0;
+  */
+

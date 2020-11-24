@@ -3294,7 +3294,12 @@ function bigbluebuttonbn_settings_experimental(&$renderer) {
     $renderer->render_group_element(
         'meetingevents_enabled',
         $renderer->render_group_element_checkbox('meetingevents_enabled', 0)
-    );
+        );
+    // UI for 'transfer schedule' feature.
+    $renderer->render_group_element(
+        'transferschedule_enabled',
+        $renderer->render_group_element_checkbox('transferschedule_enabled', 0)
+        );
 }
 
 /**
