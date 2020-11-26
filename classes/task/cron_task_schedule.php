@@ -46,8 +46,8 @@ class cron_task_schedule extends \core\task\scheduled_task {
         global $CFG, $DB;
         
         // Check if transfer is enabled, else quit with message
-        if(!$CFG->transferschedule_enabled){
-            mtrace('transferschedule_enabled is disabled by config');
+        if(!$CFG->bigbluebuttonbn_transferschedule_enabled){
+            mtrace('bigbluebuttonbn_transferschedule_enabled is disabled by config');
             return;
         }
 
