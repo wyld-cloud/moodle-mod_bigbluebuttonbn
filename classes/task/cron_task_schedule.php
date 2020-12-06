@@ -58,7 +58,7 @@ class cron_task_schedule extends \core\task\scheduled_task {
                 m.id as moduleInstanceId,
                 m.course as courseId,
                 m.name as courseModuleName,
-                m.meetingid,
+                CONCAT(m.meetingid, '-', m.course, '-', m.id) as meetingid,
                 m.openingtime,
                 m.closingtime,
                 m.participants,
